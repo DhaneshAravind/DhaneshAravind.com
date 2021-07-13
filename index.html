@@ -19,6 +19,17 @@
   <meta name="author" content="Dhanesh Aravind">
   <meta name="google-site-verification" content="9YkuTM1sizDLNwcGXKNZfu5o5Cf0sTAqhly-AtbQqOE" />
 </head>
+<style media="all">
+  .mobile-content{display:none}
+  .columndesktop{display:block}
+  @media (max-width:1000px){
+  .row-banner{background-image:url('Assets/BGHead\ \(6\).png')}
+  .columndesktop {display:none}
+  .mobile-content {display:block}
+  }
+  @media (max-width:1460px){
+    .row-head {background-image: none;}}
+  </style>
   
   <!-- 000webhost pwd: VwvuVZ&@^$b4vpWM$^bd-->
   <body>
@@ -31,19 +42,26 @@
     </div> -->
     <div class="bg">
     <nav class="navbar navbar-expand-lg navbar-custom">
-    <a class="navbar-brand" style="font-size: 240%; font-weight: 600;">
-          <img src = "Assets/LOGO.png" width="20%">
-        </a>
+    <a class="navbar" style="font-size: 240%; font-weight: 600;">
+      <img src = "Assets/LOGO.png" width="20%">
+    </a>
     </nav>
     </div>
-    <div class="row" style="padding-top: 7%; padding-left: 10%; padding-bottom: 10%; background-color: #FFFDD0;">
+    <div class='row-banner'>
+    <div class='mobile-content' style='background-color: #90d7ff'>
+      <img src="Assets/headerimg.png" style='width: 55%; padding-left: 10%;'>
+    </div>
+    <div class="row-head" style="padding-top: 5%; padding-left: 10%; padding-bottom: 5%; background-color: #FFFDD0;">
     <div class = "column">
     <h3>Hi, This is</h3>
     <h1 style="color: #0476d0; font-family: 'Fredoka One', cursive; font-size: 450%; padding-right: 5%;">Dhanesh Aravind,</h1>
     <h5>Web Developer, App Developer, IOT enthusiast</h5>
+    <br>
+    <!-- <button type="button" class="btn btn-light" style="background-color: #0476d0; color: white"><h5>Take a look at my projects ></h5></button> -->
     </div>
-    <div class="column">
-    <img src="Assets/headerimg1.png" style='width: 70%;'>
+    <div class="columndesktop">
+    <img src="Assets/headerimg.png" style='width: 75%; padding-left: 10%;'>
+    </div>
     </div>
     </div>
     <h2>Who am I?</h2>

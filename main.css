@@ -37,7 +37,7 @@ backdrop-filter: blur(5px);
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-color: #FFFFCC;
+color: #90D7FF;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
@@ -231,10 +231,24 @@ height: auto;
 }
 }
 
-.row {
+.row-head {
     display: flex;
+    background-image: url('Assets/BGHead\ \(5\).png');
   }
-  
+
+
   .column {
     flex: 50%;
+    
+  }
+  .mobile-content {
+    display: flex;
+  }
+  .row-banner {
+    background-image: url('Assets/BGHead\ \(5\).png');
+  }
+  
+  .headerlink {
+    font-size: 30px;
+    text-align: right;
   }
