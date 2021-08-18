@@ -3,38 +3,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
+ 
+.bodytag {
+  padding-left: 3%;
+}
 .bg {
 /* The image used */
 background-color: #FFFDD0;
-
+ 
 min-height: 100px;
-
+ 
 /* Center and scale the image nicely */
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-
+ 
 /* Needed to position the navbar */
 position: relative;
 }
-
+ 
 /* Position the navbar container inside the image */
 .contain {
 position: absolute;
 margin: 20px;
 width: auto;
 }
-
+ 
 .header a{
 font-size: 20px;
 }
 .blur {
-
+ 
 background-image: url("");
 backdrop-filter: blur(5px);
 }
-
+ 
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
@@ -46,8 +49,8 @@ color: #FDFCDC;
 font-weight: 600;
 padding-right: 20px;
 padding-left: 20px;
-
-
+ 
+ 
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
@@ -61,14 +64,14 @@ padding:50px 0;
 color:#f0f9ff;
 background-color:#282d32;
 }
-
+ 
 .footer-dark h3 {
 margin-top:0;
 margin-bottom:12px;
 font-weight:bold;
 font-size:16px;
 }
-
+ 
 .footer-dark ul {
 padding:0;
 list-style:none;
@@ -76,50 +79,50 @@ line-height:1.6;
 font-size:14px;
 margin-bottom:0;
 }
-
+ 
 .footer-dark ul a {
 color:inherit;
 text-decoration:none;
 opacity:0.6;
 }
-
+ 
 .footer-dark ul a:hover {
 opacity:0.8;
 }
-
+ 
 @media (max-width:767px) {
 .footer-dark .item:not(.social) {
   text-align:center;
   padding-bottom:20px;
 }
 }
-
+ 
 .footer-dark .item.text {
 margin-bottom:36px;
 }
-
+ 
 @media (max-width:767px) {
 .footer-dark .item.text {
   margin-bottom:0;
 }
 }
-
+ 
 .footer-dark .item.text p {
 opacity:0.6;
 margin-bottom:0;
 }
-
+ 
 .footer-dark .item.social {
 text-align:center;
 }
-
+ 
 @media (max-width:991px) {
 .footer-dark .item.social {
   text-align:center;
   margin-top:20px;
 }
 }
-
+ 
 .footer-dark .item.social > a {
 font-size:20px;
 width:36px;
@@ -133,11 +136,11 @@ margin:0 8px;
 color:#fff;
 opacity:0.75;
 }
-
+ 
 .footer-dark .item.social > a:hover {
 opacity:0.9;
 }
-
+ 
 .footer-dark .copyright {
 text-align:center;
 padding-top:24px;
@@ -145,7 +148,7 @@ opacity:0.3;
 font-size:13px;
 margin-bottom:0;
 }
-
+ 
 .display-1 {
   font-size: 6rem;
   font-weight: 400;
@@ -156,7 +159,7 @@ overflow: hidden;
 background-color: #f1f1f1;
 padding: 20px 10px;
 }
-
+ 
 /* Style the header links */
 .header a {
 float: left;
@@ -168,13 +171,13 @@ font-size: 2px;
 line-height: 25px;
 border-radius: 4px;
 }
-
+ 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
 font-size: 25px;
 font-weight: bold;
 }
-
+ 
 /* Change the background color on mouse-over */
 .list a:hover {
 background-color: #ddd;
@@ -184,7 +187,7 @@ color: black;
 font-size: 18px;
 }
 /* Style the active/current link*/
-
+ 
 .nav-item {
 font-size: 20px;
 }
@@ -225,19 +228,22 @@ height: auto;
   right: 0;
   top: 0;
 }
+ 
+  
+  
+}
 .header.responsive a {
   float: none;
   display: block;
   text-align: left;
 }
-}
-
+ 
 .row-head {
     display: flex;
-    background-image: url('Assets/BGHead\ \(6\).png');
+    background-image: url('Assets/BGHead\ \(13\).png');
   }
-
-
+ 
+ 
   .column {
     flex: 50%;
     
@@ -259,4 +265,81 @@ height: auto;
   .headerlink {
     font-size: 30px;
     text-align: right;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    width: 100%;
+    background-color: #EEE;
+    border-radius: 100px;
+    height: 20px;
+    padding: 2px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    height: 20px;
+    content:  attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcc33;
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.htmlcss::before{
+    width: calc(70% - 10px);
+    background-color: #06D6A0
+  }
+  .bar.flutter::before{
+    width: calc(60% - 10px);
+    background-color: #FFD300
+  }
+  .bar.python::before{
+    width: calc(80% - 10px);
+    background-color: #FF7477
+  }
+  .bar.iot::before{
+    width: calc(90% - 10px);
+  }
+  .skillcard {
+    padding: 5px;
+    border-radius: 10px;
+    border: 5px solid;
+    width: 30%;
   }
