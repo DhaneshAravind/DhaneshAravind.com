@@ -38,6 +38,25 @@
       transform: scale(1.1);
     }
 
+    .hide {
+  display: none;
+}
+
+    .tools {
+      transition: transform .2s;
+      cursor: pointer;
+      width: 150px;
+      padding-left: 12px;
+      padding-top: 12px;
+      padding-right: 12px;
+      padding-bottom: 12px;
+    }
+    .tools:hover {
+      transform: scale(1.1)
+    }
+    .tooldiv {
+      width: 600px;
+    }
     @media (max-width: 1230px) {
       .skillcard {
         width: 95%
@@ -82,7 +101,12 @@
         padding-top: 50px;
         height: 45%;
       }
-      
+      .tooldiv {
+      width: 150px;
+    }
+      .tools {
+        width: 90px;
+      }
       div.row-head h1 {
         font-size: 43px;
       }
@@ -117,7 +141,6 @@
         padding-top: 10px;
       }
     }
-
     .touch {
       border-radius: 60px;
       color: #0476d0;
@@ -259,6 +282,24 @@
     <br>
     <br>
   </div>
+  <center>
+    <h2 style="padding-top: 2%; font-family: 'Josefin Sans', sans-serif; font-size: 280%; color: #FF686B">Tools I Use:</h2>
+  </center>
+<!--TODO: | Wildlife Protection App | Waste Segregation with OpenCV | SWORD | ROV | -->
+  <div class="container">
+    <center>
+      <img class="tools" src="Assets/12.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/canva.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/13.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/14.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/15.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/16.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/17.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/18.jpg" style="padding-right: 1%;">
+      <img class="tools" src="Assets/19.jpg" style="padding-right: 1%;">
+      
+    </center>
+    </div>
   <div class="footer-dark">
     <footer>
       <div class="container">
@@ -266,7 +307,7 @@
           <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
                 class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
               href="#"><i class="icon ion-social-instagram"></i></a></div>
-        </div>
+        </div>x
       </div>
     </footer>
   </div>
